@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>CodexAI - Browser Based Code Editor</title>
+          <link rel="stylesheet" href="style.css">
+          <link rel="shortcut icon" href="./asstes/codexai-logo.svg" type="image/x-icon">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+                    rel="stylesheet">
+</head>
+
+<body>
+          <!-- Navigation -->
+          <nav class="glass-nav">
+                    <div class="nav-container">
+                              <a href="https://codexai.substack.com/" target="_blank" class="logo">
+                                        <img src="./asstes/codexai-logo.svg" alt="Codexai Logo" class="logo-img">
+                                        <span>Codexai</span>
+                              </a>
+                              <div class="nav-links">
+                                        <a href="https://codexai.substack.com/about" target="_blank">Features</a>
+                                        <a href="https://code.visualstudio.com/" target="_blank">Editor</a>
+                                        <a href="https://codexai.substack.com/" target="_blank">Community</a>
+                              </div>
+                    </div>
+          </nav>
+
+          <!-- Hero Section -->
+          <section class="hero">
+                    <div class="hero-container">
+                              <div class="hero-content">
+                                        <h1 class="hero-title">Craft Digital Experiences</h1>
+                                        <p class="hero-subtitle">Real-time web editor for your Front-end Practice</p>
+                                        <div class="cta-container">
+                                                  <button class="cta-button">Start Coding <i
+                                                                      class="fas fa-arrow-right"></i></button>
+                                                  <button class="cta-button secondary">View Demo</button>
+                                        </div>
+                              </div>
+                              <div class="hero-illustration">
+                                        <img src="./asstes/hero-illustration.svg" alt="AI Coding Illustration">
+                              </div>
+                    </div>
+          </section>
+
+          <!-- Code Editor Section -->
+          <section class="editor-section" id="editor">
+                    <div class="editor-container">
+                              <div class="editor-column">
+                                        <div class="editor-card">
+                                                  <div class="editor-header">
+                                                            <i class="fab fa-html5"></i>
+                                                            <h3>HTML</h3>
+                                                  </div>
+                                                  <textarea id="html-editor" class="code-input"
+                                                            placeholder="<!DOCTYPE html>"></textarea>
+                                        </div>
+
+                                        <div class="editor-card">
+                                                  <div class="editor-header">
+                                                            <i class="fab fa-css3-alt"></i>
+                                                            <h3>CSS</h3>
+                                                  </div>
+                                                  <textarea id="css-editor" class="code-input"
+                                                            placeholder="body { }"></textarea>
+                                        </div>
+
+                                        <div class="editor-card">
+                                                  <div class="editor-header">
+                                                            <i class="fab fa-js-square"></i>
+                                                            <h3>JavaScript</h3>
+                                                  </div>
+                                                  <textarea id="js-editor" class="code-input"
+                                                            placeholder="function() { }"></textarea>
+                                        </div>
+                              </div>
+
+                              <div class="preview-column">
+                                        <div class="preview-card">
+                                                  <div class="preview-header">
+                                                            <h3>Live Preview</h3>
+                                                            <button class="preview-button" onclick="updatePreview()">
+                                                                      <i class="fas fa-sync-alt"></i> Refresh
+                                                            </button>
+                                                  </div>
+                                                  <iframe id="preview-frame" class="preview-frame"></iframe>
+                                        </div>
+                              </div>
+                    </div>
+          </section>
+
+          <!-- Footer -->
+          <footer class="footer">
+                    <div class="footer-container">
+                              <div class="brand-section">
+                                        <img src="./asstes/codexai-logo.svg" alt="CodexAI" class="footer-logo">
+                                        <p class="footer-text">Empowering developers with AI-enhanced tools</p>
+                              </div>
+                              <div class="social-links">
+                                        <a href="https://github.com/ManasMoon" target="_blank" class="social-link">
+                                                  <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://linkedin.com/in/manasmoon" target="_blank" class="social-link">
+                                                  <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <a href="#" class="social-link">
+                                                  <i class="fas fa-code"></i>
+                                        </a>
+                              </div>
+                    </div>
+                    <div class="copyright">
+                              © 2025 Codexai. All rights reserved.
+                    </div>
+          </footer>
+
+          <script src="script.js"></script>
+</body>
+
+</html>
